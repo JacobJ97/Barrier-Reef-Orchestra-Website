@@ -23,8 +23,7 @@ nav ul {
     display: inline-table;
     text-align: center;
     float: right;
-    margin-right: 230px;
-    margin-top: 59px;
+    margin-right: 50px;
     padding-right: 20px;
     padding-left: 20px;
 }
@@ -99,6 +98,36 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    padding-left: 230px;
+}
+
 body {
     background-color: lightgray;
+}
+
+a[href $= '.pdf'] {
+    padding-right: 18px;
+    background: transparent url(hyperlinkcueexamples/icon_pdf.gif)
+                no-repeat center right;
+}
+
+a[href ^="https"] {
+    padding-right: 18px;
+    background: transparent url(hyperlinkcueexamples/icon_external.gif)
+                no-repeat center right;
+}
+
+p, li, div {
+    font-family: 'Flamenco', monospace;
+    font-size: 24px;
+}
+
+h1 {
+    font-family: 'Flamenco', monospace;
+    font-size: 36px;
+}
+
+ul {
+    padding-left: 230px;
 }
