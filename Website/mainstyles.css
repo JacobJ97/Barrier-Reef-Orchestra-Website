@@ -69,11 +69,6 @@ nav ul ul li {
     position: relative;
 }
 
-/*#topnavbar {*/
-/*background-color: black;*/
-/*overflow: hidden;*/
-/*}*/
-
 #logo {
     float: left;
 }
@@ -82,6 +77,33 @@ nav ul ul li {
     width: 200px;
     padding-top: 15px;
     height: 1000px;
+    border-right: 5px black solid;
+    float: left;
+    text-align: center;
+}
+
+.sideborder1 {
+    width: 200px;
+    padding-top: 15px;
+    height: 6000px;
+    border-right: 5px black solid;
+    float: left;
+    text-align: center;
+}
+
+.sideborder2 {
+    width: 200px;
+    padding-top: 15px;
+    height: 3200px;
+    border-right: 5px black solid;
+    float: left;
+    text-align: center;
+}
+
+.sideborder3 {
+    width: 200px;
+    padding-top: 15px;
+    height: 7000px;
     border-right: 5px black solid;
     float: left;
     text-align: center;
@@ -110,12 +132,14 @@ body {
 
 a[href $= '.pdf'] {
     padding-right: 18px;
-    background: transparent url(hyperlinkcueexamples/icon_pdf.gif) no-repeat center right;
+    background: transparent url(hyperlinkcueexamples/icon_pdf.gif)
+                no-repeat center right;
 }
 
 a[href ^="https"] {
     padding-right: 18px;
-    background: transparent url(hyperlinkcueexamples/icon_external.gif) no-repeat center right;
+    background: transparent url(hyperlinkcueexamples/icon_external.gif)
+                no-repeat center right;
 }
 
 p, li, div {
@@ -128,8 +152,12 @@ h1 {
     font-size: 36px;
 }
 
-ul {
+h3 {
     padding-left: 230px;
+}
+
+ul {
+    padding-left: 260px;
 }
 
 #ensembles_committee {
