@@ -29,7 +29,9 @@ nav ul {
 }
 
 nav ul:after {
-    content: ""; clear: both; display: block;
+    content: "";
+    clear: both;
+    display: block;
 }
 
 nav ul li {
@@ -40,7 +42,6 @@ nav ul li {
 nav ul li:hover {
     background: lightgray;
 }
-
 
 nav ul li:hover a {
     color: black;
@@ -69,8 +70,8 @@ nav ul ul li {
 }
 
 /*#topnavbar {*/
-    /*background-color: black;*/
-    /*overflow: hidden;*/
+/*background-color: black;*/
+/*overflow: hidden;*/
 /*}*/
 
 #logo {
@@ -109,14 +110,12 @@ body {
 
 a[href $= '.pdf'] {
     padding-right: 18px;
-    background: transparent url(hyperlinkcueexamples/icon_pdf.gif)
-                no-repeat center right;
+    background: transparent url(hyperlinkcueexamples/icon_pdf.gif) no-repeat center right;
 }
 
 a[href ^="https"] {
     padding-right: 18px;
-    background: transparent url(hyperlinkcueexamples/icon_external.gif)
-                no-repeat center right;
+    background: transparent url(hyperlinkcueexamples/icon_external.gif) no-repeat center right;
 }
 
 p, li, div {
@@ -144,4 +143,10 @@ ul {
 
 caption {
     font-weight: bold;
+}
+
+ ul#menu li.current a
+{ color: #FFFF00;
+    background: #323232;
+    text-shadow: none;
 }
