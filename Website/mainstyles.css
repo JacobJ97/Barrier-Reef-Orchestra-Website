@@ -114,18 +114,6 @@ nav ul ul li {
     font-size: 18px;
 }
 
-p {
-    padding-left: 230px;
-}
-
-h1 {
-    text-align: center;
-}
-
-h2 {
-    padding-left: 230px;
-}
-
 body {
     background-color: lightgray;
 }
@@ -142,15 +130,40 @@ a[href ^="https"] {
                 no-repeat center right;
 }
 
-p, li, div {
+p, li, div, strong, em {
     font-family: 'Flamenco', monospace;
     font-size: 24px;
+}
+
+p {
+    padding-left: 230px;
+}
+
+strong {
+    padding-left: 230px;
+    display: block;
+}
+
+em {
+    padding-left: 230px;
+    display: block;
+}
+
+a {
+    font-family: 'Flamenco', monospace;
 }
 
 h1 {
     font-family: 'Flamenco', monospace;
     font-size: 36px;
     margin-top: 75px;
+    text-align: center;
+}
+
+h2 {
+    padding-left: 230px;
+    font-family: 'Flamenco', monospace;
+    font-size: 30px;
 }
 
 h3 {
@@ -191,4 +204,10 @@ ul#menu li ul li.current a
     margin-left: auto;
     margin-right: auto;
     width: 100%
+}
+
+.imgevent {
+    float: left;
+    padding-left: 30px;
+    padding-right: 30px;
 }
