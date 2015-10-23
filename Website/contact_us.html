@@ -55,7 +55,7 @@
     <li><a href="documentation/north-queensland-orchestra-benefactor-form.pdf" target="_blank">North Queensland Orchestra Benefactor Form (3,777KB)</a></li>
 </ol>
 
-<form id="generalform" name="generalform" method="post" action="">
+<form id="generalform" name="generalform" method="post" action="" >
     <label class="generalname" for="generalname">First Name</label>
     <input type="text" name="generalname" id="generalname" size="60" maxlength="60">
     <label class="generalemail" for="generalemail">Email</label>
@@ -68,18 +68,18 @@
     <label class="contribute" for="contribute">I would like to become a Great Barrier Reef Benefactor and contribute (in $)</label>
     <input type="text" name="contribute" id="contribute" size="5" maxlength="5">
     <p class="formradiobutton">
+        <input type="radio" name="paymentmethod" id="paymentmethodcheque">
         <label class="paymentmethodcheque" for="paymentmethodcheque">By cheque</label>
-        <input type="radio" name="paymentmethodcheque" id="paymentmethodcheque">
+        <input type="radio" name="paymentmethod" id="paymentmethodeftpos">
         <label class="paymentmethodeftpos" for="paymentmethodeftpos">By eftpos</label>
-        <input type="radio" name="paymentmethodeftpos" id="paymentmethodeftpos">
+        <input type="radio" name="paymentmethod" id="paymentmethodcash">
         <label class="paymentmethodcash" for="paymentmethodcash">By cash</label>
-        <input type="radio" name="paymentmethodcash" id="paymentmethodcash">
     </p>
     <label class="benefactoridentity" for="benefactoridentity">Please place me/us on the roll as</label>
     <input type="text" name="benefactoridentity" id="benefactoridentity">
     <p class="formradiobutton">
+        <input type="radio" name="benefactoridentitynone" id="benefactoridentitynone" />
         <label class="benefactoridentitynone" for="benefactoridentitynone">Or remain anonymous</label>
-        <input type="radio" name="benefactoridentitynone" id="benefactoridentitynone">
     </p>
     <label class="benefactorname" for="benefactorname">Name</label>
     <input type="text" name="benefactorname" id="benefactorname" size="60" maxlength="60">
