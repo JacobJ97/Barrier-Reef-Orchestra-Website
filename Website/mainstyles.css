@@ -228,14 +228,14 @@ ol {
     padding-left: 230px;
 }
 
-.firstnamegeneral, .lastname, .email, .comments {
+.generalname, .generalemail, .comments, .contribute, .benefactorname, .benefactoridentity, .benefactoraddress, .benefactoremail, .benefactorphone, .benefactormobile, .benefactorsignature {
     display: block;
     margin-left: 230px;
     margin-top: 15px;
     font-family: 'Flamenco', monospace;
 }
 
-#firstnamegeneral, #lastname, #email, #comments {
+#generalname, #generalemail, #comments, #contribute, #benefactorname, #benefactoridentity, #benefactoraddress, #benefactoremail, #benefactorphone, #benefactormobile, #benefactorsignature {
     margin-left: 25px;
 }
 
@@ -249,4 +249,10 @@ ol {
 
 #memberform {
     display: none;
+}
+
+.formradiobutton {
+    font-size: 16px;
+    font-family: 'Flamenco', monospace;
+    margin-bottom: 50px;
 }

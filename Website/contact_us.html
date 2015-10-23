@@ -56,40 +56,68 @@
 </ol>
 
 <form id="generalform" name="generalform" method="post" action="">
-<label class="firstnamegeneral" for="firstnamegeneral">First Name</label>
-    <input type="text" name="firstnamegeneral" id="firstnamegeneral" size="30" maxlength="30">
-    <label class="lastname" for="lastname">Last Name</label>
-    <input type="text" name="lastname" id="lastname" size="30" maxlength="30">
-    <label class="email" for="email">Email</label>
-    <input type="text" name="email" id="email" size="50" maxlength="50">
+    <label class="generalname" for="generalname">First Name</label>
+    <input type="text" name="generalname" id="generalname" size="60" maxlength="60">
+    <label class="generalemail" for="generalemail">Email</label>
+    <input type="text" name="generalemail" id="generalemail" size="50" maxlength="50">
     <label class="comments" for="comments">Comments/Enquiries</label>
     <textarea name="comments" id="comments" rows="5" cols="50"></textarea>
 </form>
 
-<!--<form id="benefactorform" name="benefactorform" method="post" action="start.php">-->
-    <!--<label class="firstnamebenefactor" for="firstnamebenefactor">First Name</label>-->
-    <!--<input type="text" name="firstnamebenefactor" id="firstnamebenefactor" size="30" maxlength="30">-->
-<!--</form>-->
+<form id="benefactorform" name="benefactorform" method="post" action="start.php">
+    <label class="contribute" for="contribute">I would like to become a Great Barrier Reef Benefactor and contribute (in $)</label>
+    <input type="text" name="contribute" id="contribute" size="5" maxlength="5">
+    <p class="formradiobutton">
+        <label class="paymentmethodcheque" for="paymentmethodcheque">By cheque</label>
+        <input type="radio" name="paymentmethodcheque" id="paymentmethodcheque">
+        <label class="paymentmethodeftpos" for="paymentmethodeftpos">By eftpos</label>
+        <input type="radio" name="paymentmethodeftpos" id="paymentmethodeftpos">
+        <label class="paymentmethodcash" for="paymentmethodcash">By cash</label>
+        <input type="radio" name="paymentmethodcash" id="paymentmethodcash">
+    </p>
+    <label class="benefactoridentity" for="benefactoridentity">Please place me/us on the roll as</label>
+    <input type="text" name="benefactoridentity" id="benefactoridentity">
+    <p class="formradiobutton">
+        <label class="benefactoridentitynone" for="benefactoridentitynone">Or remain anonymous</label>
+        <input type="radio" name="benefactoridentitynone" id="benefactoridentitynone">
+    </p>
+    <label class="benefactorname" for="benefactorname">Name</label>
+    <input type="text" name="benefactorname" id="benefactorname" size="60" maxlength="60">
+    <label class="benefactoraddress" for="benefactoraddress">Mailing Address</label>
+    <input type="text" name="benefactoraddress" id="benefactoraddress">
+    <label class="benefactoremail" for="benefactoremail">Email</label>
+    <input type="text" name="benefactoremail" id="benefactoremail">
+    <label class="benefactorphone" for="benefactorphone">Phone</label>
+    <input type="text" name="benefactorphone" id="benefactorphone">
+    <label class="benefactormobile" for="benefactormobile">Mobile</label>
+    <input type="text" name="benefactormobile" id="benefactormobile">
+    <label class="benefactorsignature" for="benefactorsignature">Scanned picture of your signature:</label>
+    <input type="file" name="benefactorsignature" id="benefactorsignature">
 
-<!--<form id="memberform" name="memberform" method="post" action="start.php">-->
-    <!--<label class="firstnamemember" for="firstnamemember">First Name</label>-->
-    <!--<input type="text" name="firstnamemember" id="firstnamemember" size="30" maxlength="30">-->
-<!--</form>-->
+</form>
+
+<form id="memberform" name="memberform" method="post" action="start.php">
+    <label class="firstnamemember" for="firstnamemember">First Name</label>
+    <input type="text" name="firstnamemember" id="firstnamemember" size="30" maxlength="30">
+</form>
 
 <script type="text/javascript">
-    function rtogglegeneral() {
+    //When a radio button is clicked upon, the appropriate form information appears to the user.
     var generalform = document.getElementById("generalform");
-        if (generalform.style.display == 'none') {generalform.style.display = 'block';}
+    var benefactorform = document.getElementById("benefactorform");
+    var memberform = document.getElementById("memberform");
+
+    function rtogglegeneral() {
+        if (generalform.style.display == 'none') {generalform.style.display = 'block'; benefactorform.style.display = 'none'; memberform.style.display = 'none'}
         else {generalform.style.display = 'none';}}
 
-//    function rtogglebenefactor() {
-//        var benefactorform = document.getElementById("benefactorform");
-//        if (benefactorform.style.display == "none") {benefactorform.style.display = "block";}}
-//
-//
-//    function rtogglemember() {
-//        var memberform = document.getElementById("memberform");
-//        if (memberform.style.display == "none") {memberform.style.display = "block";}}
+    function rtogglebenefactor() {
+        if (benefactorform.style.display == "none") {benefactorform.style.display = "block"; generalform.style.display = 'none'; memberform.style.display = 'none'}
+        else {benefactorform.style.display = 'none';}}
+
+    function rtogglemember() {
+        if (memberform.style.display == "none") {memberform.style.display = "block"; generalform.style.display = 'none'; benefactorform.style.display = 'none'}
+        else {memberform.style.display = 'none';}}
 </script>
 
 </body>
