@@ -193,9 +193,16 @@ caption {
     text-shadow: none;
 }
 
+ ul#menu li.buyTickets a
+{ color: orange;
+    background: #FF8E11
+    text-shadow: none;
+}
+
+
 ul#menu li ul li.current a
 { color: lightyellow;
-    background: #323232;
+    background: #E9484B;
     text-shadow: none;
 }
 
