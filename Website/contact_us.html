@@ -41,24 +41,50 @@
 <h1>Contact Us</h1>
 <p>Select your reason for contacting us.</p>
 <p>
-    <input type="radio" name="list" value="general" id="general" />
+    <input type="radio" name="list" value="general" id="general" onclick="rtogglegeneral();"/>
         <label for="general">General questions/enquiries</label>
-    <input type="radio" name="list" value="benefactor" id="benefactor" />
+    <input type="radio" name="list" value="benefactor" id="benefactor" onclick="rtogglebenefactor();" />
         <label for="benefactor">Become a benefactor</label>
-    <input type="radio" name="list" value="member" id="member" />
+    <input type="radio" name="list" value="member" id="member" onclick="rtogglemember();"/>
         <label for="member">Become a member</label>
 </p>
 
-<!--<script>-->
-    <!--function chooseOption() {-->
-        <!--var general = document.getElementById("general");-->
-        <!--var benefactor = document.getElementById("benefactor");-->
-        <!--var member = document.getElementById("member");-->
+<form id="generalform" name="generalform" method="post" action="">
+<label class="firstnamegeneral" for="firstnamegeneral">First Name</label>
+    <input type="text" name="firstnamegeneral" id="firstnamegeneral" size="30" maxlength="30">
+    <label class="lastname" for="lastname">Last Name</label>
+    <input type="text" name="lastname" id="lastname" size="30" maxlength="30">
+    <label class="email" for="email">Email</label>
+    <input type="text" name="email" id="email" size="50" maxlength="50">
+    <label class="comments" for="comments">Comments/Enquiries</label>
+    <textarea name="comments" id="comments" rows="5" cols="50"></textarea>
+</form>
 
-        <!--if (general.checked){show general form}};-->
-    <!--else if (benefactor.checked) {show benefactor form};-->
-    <!--else if (member.checked) {show member form};-->
-<!--</script>-->
+<!--<form id="benefactorform" name="benefactorform" method="post" action="start.php">-->
+    <!--<label class="firstnamebenefactor" for="firstnamebenefactor">First Name</label>-->
+    <!--<input type="text" name="firstnamebenefactor" id="firstnamebenefactor" size="30" maxlength="30">-->
+<!--</form>-->
+
+<!--<form id="memberform" name="memberform" method="post" action="start.php">-->
+    <!--<label class="firstnamemember" for="firstnamemember">First Name</label>-->
+    <!--<input type="text" name="firstnamemember" id="firstnamemember" size="30" maxlength="30">-->
+<!--</form>-->
+
+<script type="text/javascript">
+    function rtogglegeneral() {
+    var generalform = document.getElementById("generalform");
+        if (generalform.style.display == 'none') {generalform.style.display = 'block';}
+        else {generalform.style.display = 'none';}}
+
+//    function rtogglebenefactor() {
+//        var benefactorform = document.getElementById("benefactorform");
+//        if (benefactorform.style.display == "none") {benefactorform.style.display = "block";}}
+//
+//
+//    function rtogglemember() {
+//        var memberform = document.getElementById("memberform");
+//        if (memberform.style.display == "none") {memberform.style.display = "block";}}
+</script>
 
 </body>
 </html>

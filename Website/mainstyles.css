@@ -220,3 +220,26 @@ ol {
     list-style-type: none;
     padding-left: 230px;
 }
+
+.firstnamegeneral, .lastname, .email, .comments {
+    display: block;
+    margin-left: 230px;
+    margin-top: 15px;
+    font-family: 'Flamenco', monospace;
+}
+
+#firstnamegeneral, #lastname, #email, #comments {
+    margin-left: 25px;
+}
+
+#generalform {
+    display: none;
+}
+
+#benefactorform {
+    display: none;
+}
+
+#memberform {
+    display: none;
+}
