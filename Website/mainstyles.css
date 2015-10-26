@@ -228,14 +228,14 @@ ol {
     padding-left: 230px;
 }
 
-.generalname, .generalemail, .comments, .contribute, .benefactorname, .benefactoridentity, .benefactoraddress, .benefactoremail, .benefactorphone, .benefactormobile, .benefactorsignature {
+.generalname, .generalemail, .comments, .contribute, .benefactorname, .benefactoridentity, .benefactoraddress, .benefactoremail, .benefactorphone, .benefactormobile, .benefactorsignature, .membertitle1, .memberfamilyname1, .membergivenname1, .membertitle2, .memberfamilyname2, .membergivenname2, .memberchildrennamedob, .memberchildrennamedob1, .memberchildrennamedob2, .memberchildrennamedob3, .memberaddress, .memberphone, .memberemail, .memberpaymentoptions {
     display: block;
     margin-left: 230px;
     margin-top: 15px;
     font-family: 'Flamenco', monospace;
 }
 
-#generalname, #generalemail, #comments, #contribute, #benefactorname, #benefactoridentity, #benefactoraddress, #benefactoremail, #benefactorphone, #benefactormobile, #benefactorsignature {
+#generalname, #generalemail, #comments, #contribute, #benefactorname, #benefactoridentity, #benefactoraddress, #benefactoremail, #benefactorphone, #benefactormobile, #benefactorsignature, #membertitle1, #memberfamilyname1, #membergivenname1, #membertitle2, #memberfamilyname2, #membergivenname2, #memberchildrennamedob1, #memberchildrennamedob2, #memberchildrennamedob3, #memberaddress, #memberphone, #memberemail {
     margin-left: 25px;
 }
 
@@ -255,4 +255,8 @@ ol {
     font-size: 16px;
     font-family: 'Flamenco', monospace;
     margin-bottom: 50px;
+}
+
+
+
 }

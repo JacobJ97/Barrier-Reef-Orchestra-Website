@@ -30,7 +30,7 @@
         <li class="buyTickets"><a href="https://au.patronbase.com/_TVCC/Productions/0886/Performances" target="_blank">Buy Tickets</a></li>
     </ul>
 </nav>
-<div class="sideborder">
+<div class="sideborder2">
     <img src="images/SiteImages/townsville-council-logo.jpg">
 
     <div class="sidebordertext">This website is proudly supported by the Townsville Council.</div>
@@ -49,11 +49,6 @@
     <input type="radio" name="list" value="member" id="member" onclick="rtogglemember();"/>
         <label for="member">Become a member</label>
 </p>
-
-<ol>
-    <li><a href="documentation/application-form-web.pdf" target="_blank">Application Form Web (955KB)</a></li>
-    <li><a href="documentation/north-queensland-orchestra-benefactor-form.pdf" target="_blank">North Queensland Orchestra Benefactor Form (3,777KB)</a></li>
-</ol>
 
 <form id="generalform" name="generalform" method="post" action="" >
     <label class="generalname" for="generalname">First Name</label>
@@ -93,12 +88,68 @@
     <input type="text" name="benefactormobile" id="benefactormobile">
     <label class="benefactorsignature" for="benefactorsignature">Scanned picture of your signature:</label>
     <input type="file" name="benefactorsignature" id="benefactorsignature">
-
 </form>
 
 <form id="memberform" name="memberform" method="post" action="start.php">
-    <label class="firstnamemember" for="firstnamemember">First Name</label>
-    <input type="text" name="firstnamemember" id="firstnamemember" size="30" maxlength="30">
+    <p class="formradiobutton">
+        <input type="radio" name="membershiptype" id="membershiptypeadult">
+        <label class="membershiptypeadult" for="membershiptypeadult">Adult</label>
+        <input type="radio" name="membershiptype" id="membershiptypestudent">
+        <label class="membershiptypestudent" for="membershiptypestudent">Student</label>
+        <input type="radio" name="membershiptype" id="membershiptypefamily">
+        <label class="membershiptypefamily" for="membershiptypefamily">Family</label>
+        <input type="radio" name="membershiptype" id="membershiptypeconcession">
+        <label class="membershiptypeconcession" for="membershiptypeconcession">Concession</label>
+        <br><br>
+        <label class="membershipstudentconcessionnumber" for="membershipstudentconcessionnumber">Student/Concession Number</label>
+        <input type="text" name="membershipstudentconcessionnumber" id="membershipstudentconcessionnumber">
+    </p>
+    <label class="membertitle1" for="membertitle1">Title</label>
+    <input type="text" name="membertitle1" id="membertitle1">
+    <label class="memberfamilyname1" for="memberfamilyname1">Family Name</label>
+    <input type="text" name="memberfamilyname1" id="memberfamilyname1">
+    <label class="membergivenname1" for="membergivenname1">Given Name</label>
+    <input type="text" name="membergivenname1" id="membergivenname1">
+    <label class="membertitle2" for="membertitle2">Title</label>
+    <input type="text" name="membertitle2" id="membertitle2">
+    <label class="memberfamilyname2" for="memberfamilyname2">Family Name</label>
+    <input type="text" name="memberfamilyname2" id="memberfamilyname2">
+    <label class="membergivenname2" for="membergivenname2">Given Name</label>
+    <input type="text" name="membergivenname2" id="membergivenname2" size="30" maxlength="30">
+    <br><br>
+    <label class="memberchildrennamedob">Children's Names (with D.O.B)</label>
+    <label class="memberchildrennamedob1" for="memberchildrennamedob1">1</label>
+    <input type="text" name="memberchildrennamedob1" id="memberchildrennamedob1">
+    <label class="memberchildrennamedob11" for="memberchildrennamedob11"></label>
+    <input type="text" name="memberchildrennamedob11" id="memberchildrennamedob11">
+    <label class="memberchildrennamedob2" for="memberchildrennamedob2">2</label>
+    <input type="text" name="memberchildrennamedob2" id="memberchildrennamedob2">
+    <label class="memberchildrennamedob22" for="memberchildrennamedob22"></label>
+    <input type="text" name="memberchildrennamedob2" id="memberchildrennamedob22">
+    <label class="memberchildrennamedob3" for="memberchildrennamedob3">3</label>
+    <input type="text" name="memberchildrennamedob3" id="memberchildrennamedob3">
+    <label class="memberchildrennamedob33" for="memberchildrennamedob33"></label>
+    <input type="text" name="memberchildrennamedob33" id="memberchildrennamedob33">
+    <br><br>
+    <label class="memberaddress" for="memberaddress">Address</label>
+    <input type="text" name="memberaddress" id="memberaddress">
+    <label class="memberphone" for="memberphone">Telephone</label>
+    <input type="text" name="memberphone" id="memberphone">
+    <label class="memberemail" for="memberemail">E-Mail</label>
+    <input type="text" name="memberemail" id="memberemail">
+    <label class="memberpaymentoptions">Payment Options</label>
+    <p class="formradiobutton">
+        <input type="radio" name="memberpaymentoptions" id="memberpaymentoptionscash">
+        <label class="memberpaymentoptionscash" for="memberpaymentoptionscash">Cash</label>
+        <input type="text" name="memberpaymentoptionscash">
+        <input type="radio" name="memberpaymentoptions" id="memberpaymentoptionscheque">
+        <label class="memberpaymentoptionscheqie" for="memberpaymentoptionscheque">Cheque</label>
+        <input type="text" name="memberpaymentoptionscheque">
+        <input type="radio" name="memberpaymentoptions" id="memberpaymentoptionscash">
+        <label class="memberpaymentoptionscash" for="memberpaymentoptionscash">Direct Debit to NQ Ensembles Inc (BSB: 034-222, Account: 17-3033 - Include family name as reference)</label>
+        <input type="text" name="memberpaymentoptionscash">
+    </p>
+
 </form>
 
 <script type="text/javascript">
