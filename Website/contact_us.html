@@ -91,6 +91,18 @@
 </form>
 
 <form id="memberform" name="memberform" method="post" action="start.php">
+    <h2>Membership Application</h2>
+    <ol>
+        <li>Adult - $30</li>
+        <li>Fulltime Student - $15</li>
+        <li>Under 18 yrs - $15</li>
+        <li>Concession - $15</li>
+    </ol>
+    <p>(Concession is available to persons who are in receipt of Centrelink or DVA Income Support and holders of Commonwealth Senior's Health Care Card)</p>
+    <ol>
+        <li>Family - $60</li>
+    </ol>
+    <p>(Family membership available to a group of two adults and three children under the age of 18 who all reside at the same address)</p>
     <p class="formradiobutton">
         <input type="radio" name="membershiptype" id="membershiptypeadult">
         <label class="membershiptypeadult" for="membershiptypeadult">Adult</label>
@@ -141,15 +153,33 @@
     <p class="formradiobutton">
         <input type="radio" name="memberpaymentoptions" id="memberpaymentoptionscash">
         <label class="memberpaymentoptionscash" for="memberpaymentoptionscash">Cash</label>
-        <input type="text" name="memberpaymentoptionscash">
+        <input type="text" name="memberpaymentoptionscash1" id="memberpaymentoptionscash1">
+        <label class="memberpaymentoptionscash1" for="memberpaymentoptionscash1">Cheque</label>
         <input type="radio" name="memberpaymentoptions" id="memberpaymentoptionscheque">
         <label class="memberpaymentoptionscheqie" for="memberpaymentoptionscheque">Cheque</label>
-        <input type="text" name="memberpaymentoptionscheque">
-        <input type="radio" name="memberpaymentoptions" id="memberpaymentoptionscash">
-        <label class="memberpaymentoptionscash" for="memberpaymentoptionscash">Direct Debit to NQ Ensembles Inc (BSB: 034-222, Account: 17-3033 - Include family name as reference)</label>
-        <input type="text" name="memberpaymentoptionscash">
+        <input type="text" name="memberpaymentoptionscheque1" id="memberpaymentoptionscheque1">
+        <label class="memberpaymentoptionscheqie" for="memberpaymentoptionscheque1"></label>
+        <input type="radio" name="memberpaymentoptions" id="memberpaymentoptionsdebit">
+        <label class="memberpaymentoptionsdebit" for="memberpaymentoptionsdebit">Direct Debit to NQ Ensembles Inc (BSB: 034-222, Account: 17-3033 - Include family name as reference)</label>
+        <input type="text" name="memberpaymentoptionsdebit" id="memberpaymentoptionsdebit1">
+        <label class="memberpaymentoptionsdebit1" for="memberpaymentoptionsdebit1"></label>
     </p>
-
+    <h2>How you can help the orchestra</h2>
+    <label class="memberassistcomment">I would like to assist by:</label>
+    <label class="memberassistplayer" for="memberassistplayer">As a player</label>
+    <input type="checkbox" name="memberassist" id="memberassistplayer">
+    <label class="memberassistmanagement" for="memberassistmanagement">Management/Administration</label>
+    <input type="checkbox" name="memberassist" id="memberassistmanagement">
+    <label class="memberassistsupport" for="memberassistsupport">Player support</label>
+    <input type="checkbox" name="memberassist" id="memberassistsupport">
+    <label class="memberassistfundraising" for="memberassistfundraising">Fundraising</label>
+    <input type="checkbox" name="memberassist" id="memberassistfundraising">
+    <label class="memberassistmarketing" for="memberassistmarketing">Marketing/Promotion</label>
+    <input type="checkbox" name="memberassist" id="memberassistmarketing">
+    <label class="memberassistsponsorship" for="memberassistsponsorship">Sponsorship</label>
+    <input type="checkbox" name="memberassist" id="memberassistsponsorship">
+    <label class="memberassistpublishing" for="memberassistpublishing">Desktop Publishing</label>
+    <input type="checkbox" name="memberassist" id="memberassistpublishing">
 </form>
 
 <script type="text/javascript">
