@@ -50,21 +50,23 @@
         <label for="member">Become a member</label>
 </p>
 
-<form id="generalform" name="generalform" method="post" action="" >
-    <label class="generalname" for="generalname">First Name</label>
-    <input type="text" name="generalname" id="generalname" size="60" maxlength="60">
-    <label class="generalemail" for="generalemail">Email</label>
-    <input type="text" name="generalemail" id="generalemail" size="50" maxlength="50">
-    <label class="comments" for="comments">Comments/Enquiries</label>
-    <textarea name="comments" id="comments" rows="5" cols="50"></textarea>
+<form id="generalform" name="generalform" method="post" action="http://ditwebtsv.jcu.edu.au/~sci-lmw1/forms.php">
+    <label class="generalname" for="generalname">Name *</label>
+    <input type="text" name="name" id="generalname" size="60" maxlength="60" required>
+    <label class="generalemail" for="generalemail">Email *</label>
+    <input type="email" name="email" id="generalemail" size="50" maxlength="50" required>
+    <label class="comments" for="comments">Comments/Enquiries *</label>
+    <textarea name="comments" id="comments" rows="5" cols="50" required></textarea>
+    <input type="submit" value="Submit">
 </form>
 
-<form id="benefactorform" name="benefactorform" method="post" action="start.php">
+<form id="benefactorform" name="benefactorform" method="post" action="http://ditwebtsv.jcu.edu.au/~sci-lmw1/forms.php">
     <h2>Benefactor Application</h2>
     <p>With a donation of $200 or more (left up to you), you can become an Orchestra Benefactor and be placed on our Benefactor roll for twelve months. For more details on becoming a benefactor, or simply for a printable version of this form, click <a href="documentation/north-queensland-orchestra-benefactor-form.pdf">here!</a></p>
-    <label class="contribute" for="contribute">I would like to become a Great Barrier Reef Benefactor and contribute (in $)</label>
-    <input type="text" name="contribute" id="contribute" size="5" maxlength="5">
+    <label class="contribute" for="contribute">I would like to become a Great Barrier Reef Benefactor and contribute (in $) *</label>
+    <input type="number" name="contribute" id="contribute" size="5" maxlength="5" required>
     <p class="formradiobutton">
+        <label class="paymentmethodinstruct">What is your method of payment? *</label>
         <input type="radio" name="paymentmethod" id="paymentmethodcheque">
         <label class="paymentmethodcheque" for="paymentmethodcheque">By cheque</label>
         <input type="radio" name="paymentmethod" id="paymentmethodeftpos">
@@ -73,26 +75,27 @@
         <label class="paymentmethodcash" for="paymentmethodcash">By cash</label>
     </p>
     <label class="benefactoridentity" for="benefactoridentity">Please place me/us on the roll as</label>
-    <input type="text" name="benefactoridentity" id="benefactoridentity">
+    <input type="text" name="benefactoridentity" id="benefactoridentity" required>
     <p class="formradiobutton">
         <input type="radio" name="benefactoridentitynone" id="benefactoridentitynone" />
         <label class="benefactoridentitynone" for="benefactoridentitynone">Or remain anonymous</label>
     </p>
-    <label class="benefactorname" for="benefactorname">Name</label>
-    <input type="text" name="benefactorname" id="benefactorname" size="60" maxlength="60">
-    <label class="benefactoraddress" for="benefactoraddress">Mailing Address</label>
-    <input type="text" name="benefactoraddress" id="benefactoraddress">
-    <label class="benefactoremail" for="benefactoremail">Email</label>
-    <input type="text" name="benefactoremail" id="benefactoremail">
-    <label class="benefactorphone" for="benefactorphone">Phone</label>
-    <input type="text" name="benefactorphone" id="benefactorphone">
+    <label class="benefactorname" for="benefactorname">Name *</label>
+    <input type="text" name="benefactorname" id="benefactorname" size="60" maxlength="60" required>
+    <label class="benefactoraddress" for="benefactoraddress">Mailing Address *</label>
+    <input type="text" name="benefactoraddress" id="benefactoraddress" required>
+    <label class="benefactoremail" for="benefactoremail">Email *</label>
+    <input type="email" name="benefactoremail" id="benefactoremail" required>
+    <label class="benefactorphone" for="benefactorphone">Phone *</label>
+    <input type="tel" name="benefactorphone" id="benefactorphone" required>
     <label class="benefactormobile" for="benefactormobile">Mobile</label>
-    <input type="text" name="benefactormobile" id="benefactormobile">
-    <label class="benefactorsignature" for="benefactorsignature">Scanned picture of your signature:</label>
-    <input type="file" name="benefactorsignature" id="benefactorsignature">
+    <input type="tel" name="benefactormobile" id="benefactormobile">
+    <label class="benefactorsignature" for="benefactorsignature">Scanned picture of your signature *</label>
+    <input type="file" name="benefactorsignature" id="benefactorsignature" required>
+    <input type="submit" value="Submit">
 </form>
 
-<form id="memberform" name="memberform" method="post" action="start.php">
+<form id="memberform" name="memberform" method="post" action="http://ditwebtsv.jcu.edu.au/~sci-lmw1/forms.php">
     <h2>Membership Application</h2>
     <ol>
         <li>Adult - $30</li>
@@ -106,30 +109,34 @@
     </ol>
     <p>(Family membership available to a group of two adults and three children under the age of 18 who all reside at the same address)</p>
     <p class="formradiobutton">
-        <input type="radio" name="membershiptype" id="membershiptypeadult">
+        <label>What membership do you want? *</label>
+        <input type="radio" name="membershiptype" value="adult" id="membershiptypeadult" onclick="makestuffdisappear();" required>
         <label class="membershiptypeadult" for="membershiptypeadult">Adult</label>
-        <input type="radio" name="membershiptype" id="membershiptypestudent">
+        <input type="radio" name="membershiptype" value="student" id="membershiptypestudent" onclick="studentconcessionnumber();" required>
         <label class="membershiptypestudent" for="membershiptypestudent">Student</label>
-        <input type="radio" name="membershiptype" id="membershiptypefamily">
-        <label class="membershiptypefamily" for="membershiptypefamily">Family</label>
-        <input type="radio" name="membershiptype" id="membershiptypeconcession">
+        <input type="radio" name="membershiptype" value="family" id="membershiptypefamily" onclick="makestuffappear();" required/>
+        <label class="membershiptypefamily" for="membershiptypefamily" >Family</label>
+        <input type="radio" name="membershiptype" value="concession" id="membershiptypeconcession" onclick="studentconcessionnumber();" required>
         <label class="membershiptypeconcession" for="membershiptypeconcession">Concession</label>
         <br><br>
-        <label class="membershipstudentconcessionnumber" for="membershipstudentconcessionnumber">Student/Concession Number</label>
+        <span id="makestuffdisappear2">
+        <label class="membershipstudentconcessionnumber" for="membershipstudentconcessionnumber">Student/Concession Number *</label>
         <input type="text" name="membershipstudentconcessionnumber" id="membershipstudentconcessionnumber">
+        </span>
     </p>
-    <label class="membertitle1" for="membertitle1">Title</label>
-    <input type="text" name="membertitle1" id="membertitle1">
-    <label class="memberfamilyname1" for="memberfamilyname1">Family Name</label>
-    <input type="text" name="memberfamilyname1" id="memberfamilyname1">
-    <label class="membergivenname1" for="membergivenname1">Given Name</label>
-    <input type="text" name="membergivenname1" id="membergivenname1">
-    <label class="membertitle2" for="membertitle2">Title</label>
+    <label class="membertitle1" for="membertitle1">Title *</label>
+    <input type="text" name="membertitle1" id="membertitle1" required>
+    <label class="memberfamilyname1" for="memberfamilyname1">Family Name *</label>
+    <input type="text" name="memberfamilyname1" id="memberfamilyname1" required>
+    <label class="membergivenname1" for="membergivenname1">Given Name *</label>
+    <input type="text" name="membergivenname1" id="membergivenname1" required>
+    <span id="makestuffdisappear">
+    <label class="membertitle2" for="membertitle2">Title *</label>
     <input type="text" name="membertitle2" id="membertitle2">
-    <label class="memberfamilyname2" for="memberfamilyname2">Family Name</label>
+    <label class="memberfamilyname2" for="memberfamilyname2">Family Name *</label>
     <input type="text" name="memberfamilyname2" id="memberfamilyname2">
-    <label class="membergivenname2" for="membergivenname2">Given Name</label>
-    <input type="text" name="membergivenname2" id="membergivenname2" size="30" maxlength="30">
+    <label class="membergivenname2" for="membergivenname2">Given Name *</label>
+    <input type="text" name="membergivenname2" id="membergivenname2" size="30" maxlength="30" required>
     <br><br>
     <label class="memberchildrennamedob">Children's Names (with D.O.B)</label>
     <label class="memberchildrennamedob1" for="memberchildrennamedob1">1</label>
@@ -144,35 +151,36 @@
     <input type="text" name="memberchildrennamedob3" id="memberchildrennamedob3">
     <label class="memberchildrennamedob33" for="memberchildrennamedob33"></label>
     <input type="text" name="memberchildrennamedob33" id="memberchildrennamedob33">
+    </span>
     <br><br>
-    <label class="memberaddress" for="memberaddress">Address</label>
-    <input type="text" name="memberaddress" id="memberaddress">
-    <label class="memberphone" for="memberphone">Telephone</label>
-    <input type="text" name="memberphone" id="memberphone">
-    <label class="memberemail" for="memberemail">E-Mail</label>
-    <input type="text" name="memberemail" id="memberemail">
-    <label class="memberpaymentoptions">Payment Options</label>
+    <label class="memberaddress" for="memberaddress">Address *</label>
+    <input type="text" name="memberaddress" id="memberaddress" required>
+    <label class="memberphone" for="memberphone">Telephone *</label>
+    <input type="tel" name="memberphone" id="memberphone" required>
+    <label class="memberemail" for="memberemail">E-Mail *</label>
+    <input type="email" name="memberemail" id="memberemail" required>
+    <label class="memberpaymentoptions">Payment Options *</label>
     <p class="formradiobutton">
-        <input type="radio" name="memberpaymentoptions" id="memberpaymentoptionscash">
+        <input type="radio" name="memberpaymentoptions" id="memberpaymentoptionscash" required>
         <label class="memberpaymentoptionscash" for="memberpaymentoptionscash">Cash</label>
         <input type="text" name="memberpaymentoptionscash1" id="memberpaymentoptionscash1">
         <label class="memberpaymentoptionscash1" for="memberpaymentoptionscash1"></label>
         <br>
-        <input type="radio" name="memberpaymentoptions" id="memberpaymentoptionscheque">
+        <input type="radio" name="memberpaymentoptions" id="memberpaymentoptionscheque" required>
         <label class="memberpaymentoptionscheqie" for="memberpaymentoptionscheque">Cheque</label>
         <input type="text" name="memberpaymentoptionscheque1" id="memberpaymentoptionscheque1">
         <label class="memberpaymentoptionscheque1" for="memberpaymentoptionscheque1"></label>
         <br>
-        <input type="radio" name="memberpaymentoptions" id="memberpaymentoptionsdebit">
+        <input type="radio" name="memberpaymentoptions" id="memberpaymentoptionsdebit" required>
         <label class="memberpaymentoptionsdebit" for="memberpaymentoptionsdebit">Direct Debit to NQ Ensembles Inc (BSB: 034-222, Account: 17-3033 - Include family name as reference)</label>
         <input type="text" name="memberpaymentoptionsdebit" id="memberpaymentoptionsdebit1">
         <label class="memberpaymentoptionsdebit1" for="memberpaymentoptionsdebit1"></label>
     </p>
     <h2>How you can help the orchestra</h2>
     <p class="formradiobutton">
-        <label class="memberassistcomment">I would like to assist the orchestra:</label>
+        <label class="memberassistcomment">I would like to assist the orchestra</label>
         <br>
-        <input type="checkbox" name="memberassist" id="memberassistplayer">
+        <input type="checkbox" name="memberassist" id="memberassistplayer" onclick="becomeaplayer();">
         <label class="memberassistplayer" for="memberassistplayer">As a player</label>
         <br>
         <input type="checkbox" name="memberassist" id="memberassistmanagement">
@@ -192,7 +200,11 @@
         <br>
         <input type="checkbox" name="memberassist" id="memberassistpublishing">
         <label class="memberassistpublishing" for="memberassistpublishing">Desktop Publishing</label>
+        <br>
+        <input type="checkbox" name="memberassist" id="memberassistnone">
+        <label class="memberassistnone" for="memberassistnone">I would not like to help the Orchestra</label>
     </p>
+    <div id="makestuffdisappear3">
     <h2>Player Registration</h2>
     <label class="memberregistrationinstruments" for="memberregistrationinstruments">Instrument(s)</label>
     <textarea name="memberegistrationinstruments" id="memberregistrationinstruments" rows="2" cols="20"></textarea>
@@ -200,7 +212,9 @@
     <textarea name="memberregistrationqualifications" id="memberregistrationqualifications" rows="3" cols="30"></textarea>
     <label class="memberregistrationexperience" for="memberregistrationexperience">Experience</label>
     <textarea name="memberregistrationexperience" id="memberregistrationexperience" rows="4" cols="40"></textarea>
-
+    </div>
+    <br>
+    <input type="submit" value="Submit" name="Submit" id="Submit">
 </form>
 
 <script type="text/javascript">
@@ -208,19 +222,42 @@
     var generalform = document.getElementById("generalform");
     var benefactorform = document.getElementById("benefactorform");
     var memberform = document.getElementById("memberform");
+    var family = document.getElementById("makestuffdisappear");
+    var studentconcession = document.getElementById("makestuffdisappear2");
+    var player = document.getElementById("makestuffdisappear3");
+
 
     function rtogglegeneral() {
-        if (generalform.style.display == 'none') {generalform.style.display = 'block'; benefactorform.style.display = 'none'; memberform.style.display = 'none'}
+        if (generalform.style.display == 'none') {generalform.style.display = 'block'; benefactorform.style.display = 'none'; memberform.style.display = "none"}
         else {generalform.style.display = 'none';}}
 
     function rtogglebenefactor() {
-        if (benefactorform.style.display == "none") {benefactorform.style.display = "block"; generalform.style.display = 'none'; memberform.style.display = 'none'}
+        if (benefactorform.style.display == "none") {benefactorform.style.display = "block"; generalform.style.display = 'none'; memberform.style.display = "none"}
         else {benefactorform.style.display = 'none';}}
 
     function rtogglemember() {
-        if (memberform.style.display == "none") {memberform.style.display = "block"; generalform.style.display = 'none'; benefactorform.style.display = 'none'}
+        if (memberform.style.display == "none") {memberform.style.display = "block"; generalform.style.display = 'none'; benefactorform.style.display = "none"}
         else {memberform.style.display = 'none';}}
-</script>
 
+    function makestuffappear() {
+        if (family.style.display == "none") {family.style.display = "block";}
+        else {family.style.display = "none"}
+        if (studentconcession.style.display == "block") {studentconcession.style.display = "none";}}
+
+    function makestuffdisappear() {
+        if (family.style.display == "block") {family.style.display = "none";}
+        if (studentconcession.style.display == "block") {studentconcession.style.display = "none";}
+    }
+
+    function studentconcessionnumber() {
+        if (family.style.display == "block") {family.style.display = "none";}
+        if (studentconcession.style.display == "none") {studentconcession.style.display = "block";}
+        if (studentconcession.style.display == "block") {studentconcession.style.display = "block";}
+        else {studentconcession.style.display = "none"}}
+
+    function becomeaplayer() {
+        if (player.style.display == "block") {player.style.display = "none"}
+        else {player.style.display = "block"}}
+</script>
 </body>
 </html>
