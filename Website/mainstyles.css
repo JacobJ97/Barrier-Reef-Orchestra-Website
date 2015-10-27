@@ -233,14 +233,14 @@ ol {
     padding-left: 230px;
 }
 
-.generalname, .generalemail, .comments, .contribute, .benefactorname, .benefactoridentity, .benefactoraddress, .benefactoremail, .benefactorphone, .benefactormobile, .benefactorsignature, .membertitle1, .memberfamilyname1, .membergivenname1, .membertitle2, .memberfamilyname2, .membergivenname2, .memberchildrennamedob, .memberchildrennamedob1, .memberchildrennamedob2, .memberchildrennamedob3, .memberaddress, .memberphone, .memberemail, .memberpaymentoptions, .memberregistrationinstruments, .memberregistrationqualifications, .memberregistrationexperience {
+.generalname, .generalemail, .comments, .contribute, .benefactorname, .benefactoridentity, .benefactoraddress, .benefactoremail, .benefactorphone, .benefactormobile, .benefactorsignature, .membertitle1, .memberfamilyname1, .membergivenname1, .membertitle2, .memberfamilyname2, .membergivenname2, .memberchildrennamedob, .memberchildrennamedob1, .memberchildrennamedob2, .memberchildrennamedob3, .memberaddress, .memberphone, .memberemail, .memberpaymentoptions, .memberregistrationinstruments, .memberregistrationqualifications, .memberregistrationexperience, .Submit {
     display: block;
     margin-left: 230px;
     margin-top: 15px;
     font-family: 'Flamenco', monospace;
 }
 
-#generalname, #generalemail, #comments, #contribute, #benefactorname, #benefactoridentity, #benefactoraddress, #benefactoremail, #benefactorphone, #benefactormobile, #benefactorsignature, #membertitle1, #memberfamilyname1, #membergivenname1, #membertitle2, #memberfamilyname2, #membergivenname2, #memberchildrennamedob1, #memberchildrennamedob2, #memberchildrennamedob3, #memberaddress, #memberphone, #memberemail, #memberassistcomment, #memberassistplayer, #memberassistmanagement, #memberassistsupport, #memberassistfundraising, #memberassistmarketing, #memberassistsponsorship, #memberassistpublishing, #memberregistrationinstruments, #memberregistrationqualifications, #memberregistrationexperience {
+#generalname, #generalemail, #comments, #contribute, #benefactorname, #benefactoridentity, #benefactoraddress, #benefactoremail, #benefactorphone, #benefactormobile, #benefactorsignature, #membertitle1, #memberfamilyname1, #membergivenname1, #membertitle2, #memberfamilyname2, #membergivenname2, #memberchildrennamedob1, #memberchildrennamedob2, #memberchildrennamedob3, #memberaddress, #memberphone, #memberemail, #memberassistcomment, #memberassistplayer, #memberassistmanagement, #memberassistsupport, #memberassistfundraising, #memberassistmarketing, #memberassistsponsorship, #memberassistpublishing, #memberassistnone, #memberregistrationinstruments, #memberregistrationqualifications, #memberregistrationexperience, #Submit {
     margin-left: 25px;
 }
 
@@ -277,8 +277,14 @@ ol {
 	background:transparent url(video.png) no-repeat 50% 50%;
 }
 
-#yolo {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+#makestuffdisappear {
+    display: none;
+}
+
+#makestuffdisappear2 {
+    display: none;
+}
+
+#makestuffdisappear3 {
+    display: none;
 }

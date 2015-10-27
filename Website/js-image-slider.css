@@ -3,11 +3,10 @@
 #sliderFrame, #sliderFrame div {
     box-sizing: content-box;
 }
-#sliderFrame 
-{
-    position:relative;
-    width:700px;
-    margin:0 auto; /*center-aligned*/
+#sliderFrame {
+	position: relative;
+	width: 700px;
+	margin: 0 auto; /*center-aligned*/
 }
 
 #slider, #slider div.sliderInner {
