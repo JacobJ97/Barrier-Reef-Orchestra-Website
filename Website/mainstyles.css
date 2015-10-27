@@ -277,25 +277,18 @@ ol {
 	background:transparent url(video.png) no-repeat 50% 50%;
 }
 
-<<<<<<< HEAD
-#yolo {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
 img {
 	display: inline-block;
-	padding-bottom: 5px;
 	max-width: 100%;
 	height: auto;
 	width: auto; 	
 }
 
 span.centerimage {
-	margin-left: 200px;
-	padding-left: 200px;
-=======
+    text-align: center;
+    margin-left: 30px;
+}
+
 #makestuffdisappear {
     display: none;
 }
@@ -306,5 +299,4 @@ span.centerimage {
 
 #makestuffdisappear3 {
     display: none;
->>>>>>> origin/master
 }
