@@ -109,6 +109,33 @@ nav ul ul li {
     text-align: center;
 }
 
+.sideborder4 {
+    width: 200px;
+    padding-top: 15px;
+    height: 3900px;
+    border-right: 5px black solid;
+    float: left;
+    text-align: center;
+}
+
+.sideborder5 {
+    width: 200px;
+    padding-top: 15px;
+    height: 5700px;
+    border-right: 5px black solid;
+    float: left;
+    text-align: center;
+}
+
+.sideborder6 {
+    width: 200px;
+    padding-top: 15px;
+    height: 2300px;
+    border-right: 5px black solid;
+    float: left;
+    text-align: center;
+}
+
 .sidebordertext {
     padding: 15px;
     font-size: 18px;
